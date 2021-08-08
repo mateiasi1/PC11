@@ -14,17 +14,19 @@ const useTrainerStyles = makeStyles({
   },
   hoverCard: {
     backgroundColor: "skyblue",
-    transition: "0.5s ease",
-    opacity: 0.7,
+    //transition: "0.5s ease",
+    // opacity: 0.7,
     width: "345px",
     height: "100%"
     
   },
   test:{
-     
     width: "345px",
     height: "100%"
-    
+  },
+  icons:{
+      width: "15%",
+      height: "15%"
   }
 });
 

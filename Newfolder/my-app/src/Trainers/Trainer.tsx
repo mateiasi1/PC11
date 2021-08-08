@@ -12,10 +12,13 @@ import useTrainerStyles from "./TrainerStyle";
 import image from "./sabin.png";
 import { useState } from "react";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 const Trainer = () => {
   const [hovered, setHovered] = useState<boolean>(false);
-
+  const handleClick = () => {
+    alert("ionel a apasat:");
+  };
   const classes = useTrainerStyles();
   return (
     <Card
@@ -29,7 +32,6 @@ const Trainer = () => {
             <CardMedia
               className={classes.media}
               image={image}
-              title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
@@ -47,7 +49,12 @@ const Trainer = () => {
         <Box className={classes.test}>
           <CardActionArea className={classes.hoverCard}>
             <CardContent>
-              <FacebookIcon />
+              <Box>
+                <FacebookIcon className={classes.icons}/>
+              </Box>
+              <Box>
+                <TwitterIcon className={classes.icons}/>
+              </Box>
             </CardContent>
           </CardActionArea>
         </Box>
